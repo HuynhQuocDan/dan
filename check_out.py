@@ -33,7 +33,7 @@ lbl3.place(x=align_x, y=align_y + 2*align_step)
 lbl4 = Label(window,text = "Step 4: Confirm your booth information =>",font = font_name)
 lbl4.place(x=align_x, y=align_y + 3*align_step)
 
-align_button = 900
+align_button = 890
 
 lbl5 = Label(window,font = font_name)
 lbl5.place(x = align_button, y = align_y + 3*align_step)
