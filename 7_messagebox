@@ -1,0 +1,32 @@
+from tkinter import*
+from tkinter import messagebox
+
+window = Tk()
+window.geometry("400x400")
+
+def click():
+    a = messagebox.showinfo(title = "Information", message = "Day la info")
+    lbl.config(text = a)
+
+    a = messagebox.showerror(title = "Error", message = "Day la loi")
+    lbl.config(text = a)
+
+    a = messagebox.showwarning(title = "Warning", message = "stop")
+    lbl.config(text = a)
+
+    a = messagebox.askyesno(title = "yes or no", message = "quickly")
+    lbl.config(text = a)
+
+    a = messagebox.askokcancel(title = "Ok or cancel", message = "ok ok please")
+    lbl.config(text = a)
+
+    a = messagebox.askquestion(title = "Question", message = "Plese choose")
+    lbl.config(text = a)
+
+btn = Button(window,text = "click",command = click)
+btn.pack()
+
+lbl = Label(window,text="")
+lbl.pack()
+
+window.mainloop()

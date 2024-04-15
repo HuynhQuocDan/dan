@@ -1,0 +1,23 @@
+from tkinter import*
+
+window = Tk()
+window.geometry("400x400+300+200")
+
+def get():
+    data = entry.get()
+    lbl.config(text = "xin chao " + data)
+    
+def output():
+    entry.insert(0,"huynh quoc dan ")
+
+
+entry = Entry(window, font = "arial 15", bg = "black", fg = "white",bd =4, width = 25)
+entry.place(x = 50, y = 30)
+
+lbl = Label(window, text = "")
+lbl.place(x = 50, y = 70)
+
+btn = Button(window, text = "dep trai", command = output)
+btn.place(x = 50, y = 100)
+
+window.mainloop()
